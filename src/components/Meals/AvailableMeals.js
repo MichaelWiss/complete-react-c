@@ -1,3 +1,4 @@
+import Card from '../Cart/Card';
 import classes from './AvailableMeals';
 
 
@@ -34,9 +35,11 @@ const AvailableMeals = () => {
     const mealslist = DUMMY_MEALS.map(meal => <li>{meal.name}</li>);
 
     return <section className={classes.meals}>
+        <Card>
         <ul>
             {mealslist}
         </ul>
+        </Card>
     </section>
 };
 
