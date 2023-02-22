@@ -1,4 +1,4 @@
-import Card from '../Cart/Card';
+import Card from '../UI/Card';
 import classes from './AvailableMeals';
 
 
