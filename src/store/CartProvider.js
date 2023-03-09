@@ -1,5 +1,5 @@
 import CartContext from "./cart.context";
-import 
+
 
 const CartProvider = props => {
     const addItemToCartHandler = item => {
