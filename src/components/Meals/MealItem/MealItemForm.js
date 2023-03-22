@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Input from '../../UI/Input';
 import classes from './MealItemForm.module.css'
 
@@ -11,7 +11,13 @@ const MealItemForm = (props) => {
         const enteredAmount = amountInputRef.current.value;
         const enteredAmountNumber = +enteredAmount;
 
-        
+        if (
+            enteredAmount.trim().length === 0 || 
+            enteredAmountNumber < 1 || 
+            enteredAmountNumber > 5
+        ){
+        return;
+        }
     };
 
         return (
