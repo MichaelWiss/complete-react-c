@@ -15,8 +15,8 @@ const Cart = props => {
 
     const cartItemRemoveHandler = id => {};
 
-    const cartItemAddHandler = item => {
-        cartCtx.addItem({ ...item, amount: 1});
+    const cartItemAddHandler = (item) => {
+        cartCtx.addItem({...item, amount: 1});
     };
 
     const cartItems = (
