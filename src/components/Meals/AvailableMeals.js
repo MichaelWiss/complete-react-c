@@ -31,9 +31,11 @@ const AvailableMeals = () => {
     }, []);
  
     if (isLoading) {
-      return <section className={classes.MealsLoading}>
+      return (
+      <section className={classes.MealsLoading}>
         <p>Loading...</p>
       </section>
+      );
     }
 
     const mealsList = meals.map(meal => (
