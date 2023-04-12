@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Card from '../UI/Card';
-import classes from './AvailableMeals';
+import classes from './AvailableMeals.module.css';
 import MealItem from './MealItem/MealItem';
 
 
@@ -33,7 +33,7 @@ const AvailableMeals = () => {
     if (isLoading) {
       return (
       <section className={classes.MealsLoading}>
-        <p>Loading...</p>
+        <p>Is it Loading...</p>
       </section>
       );
     }
