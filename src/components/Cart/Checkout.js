@@ -2,6 +2,8 @@ import { useRef } from 'react';
 
 import classes from './Checkout.module.css';
 
+const isEmpty = value => value.trim() === '';
+
 const Checkout = (props) => {
   const nameInputRef = useRef();
   const streetInputRef = useRef();
