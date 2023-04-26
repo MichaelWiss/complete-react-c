@@ -36,7 +36,7 @@ const Checkout = (props) => {
        name: enteredNameIsValid,
        street: enteredStreetIsValid,
        city: enteredCityIsValid,
-       PostalCode: enteredPostalCodeIsValid 
+       postalCode: enteredPostalCodeIsValid 
     });
 
     const formIsValid = 
