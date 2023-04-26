@@ -30,7 +30,11 @@ const Cart = props => {
 
     const submitOrderHandler = (userData) => {
             fetch('https://react-http-a-8e37c-default-rtdb.firebaseio.com/orders.json', {
-                method: 'POST'
+                method: 'POST',
+                body: JSON.stringify({
+                    user: userData,
+                    orderedItems: cartCtx.items
+                })
             });
     };
 
