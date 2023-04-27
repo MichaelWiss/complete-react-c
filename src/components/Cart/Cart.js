@@ -37,10 +37,11 @@ const Cart = props => {
                 body: JSON.stringify({
                     user: userData,
                     orderedItems: cartCtx.items
-                })
+                }),
             });
             setIsSubmitting(false);
             setdidSubmit(true);
+            cartCtx.clearCart();
     };
 
  
@@ -78,12 +79,13 @@ const Cart = props => {
         <React.Fragment> 
             {cartItems}
             <div className={classes.total}>
-             <span>Total Amount</span>
-             <span>{totalAmount}</span>
+              <span>Total Amount</span>
+              <span>{totalAmount}</span>
             </div>
-            {isCheckout && 
+            {isCheckout && (
                 <Checkout onConfirm={submitOrderHandler} onCancel={props.onClose} 
-                />}
+                />
+                )}
             {!isCheckout && modalActions}
         </React.Fragment>
     );
