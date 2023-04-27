@@ -10,6 +10,7 @@ import Checkout from './Checkout';
 
 const Cart = props => {
     const [isCheckout, setIsCheckout] = useState(false);
+    const [] = useState();
     const cartCtx = useContext(CartContext);
 
 
