@@ -11,7 +11,7 @@ import Checkout from './Checkout';
 const Cart = props => {
     const [isCheckout, setIsCheckout] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [didSubmit, setdidSubmit] = useState(false);
+    const [didSubmit, setDidSubmit] = useState(false);
     const cartCtx = useContext(CartContext);
 
 
@@ -40,7 +40,7 @@ const Cart = props => {
                 }),
             });
             setIsSubmitting(false);
-            setdidSubmit(true);
+            setDidSubmit(true);
             cartCtx.clearCart();
     };
 
